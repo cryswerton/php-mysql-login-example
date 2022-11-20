@@ -20,13 +20,13 @@ CREATE TABLE `users` (
 <?php
 
 $ENV = [
-  "APP_NAME" => "", // No need
+  "APP_NAME" => "", // No need to fill in that
   "DB_HOST" => "localhost", // I think there will be no questions here :)
   "DB_PORT" => "", // The port number on which you database is running.It usually is 3306
   "DB_DATABASE" => "", // Your database name
   "DB_USERNAME" => "", // Your database user name. It usually is "root"
   "DB_PASSWORD" => "", // Your database passaword.
-  "HTTP" => "http://" // No need.
+  "HTTP" => "http://" // No need to fill in that.
   ];
   
 ?>
