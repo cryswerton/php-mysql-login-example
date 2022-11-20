@@ -8,7 +8,7 @@ Table "users" created;
 ### The "users" table:
 ``` SQL
 CREATE TABLE `users` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL primary key auto_increment,
   `name` varchar(300) NOT NULL,
   `email` varchar(300) NOT NULL,
   `password` varchar(300) NOT NULL,
