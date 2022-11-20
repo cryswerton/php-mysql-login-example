@@ -3,7 +3,7 @@
 $ENV = [
 
 "APP_NAME" => "",
-"DB_HOST" => "127.0.0.1",
+"DB_HOST" => "localhost",
 "DB_PORT" => "",
 "DB_DATABASE" => "",
 "DB_USERNAME" => "",
