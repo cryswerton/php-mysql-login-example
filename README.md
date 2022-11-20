@@ -15,7 +15,7 @@ CREATE TABLE `users` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 ```
-### Create and set up an env.php base on the example.env.php example. The "APP_NAME" and "HTTP" values can remain blank.
+### Create and set up an env.php file based on the example.env.php file. The "APP_NAME" and "HTTP" values can remain blank.
 ```PHP
 <?php
 
