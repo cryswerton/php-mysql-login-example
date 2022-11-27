@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,14 @@
     <title>PHP Login Example</title>
 </head>
 <body>
-    <?php include 'check_session.php';?>
     <h1>PHP Login Example</h1>
-    <?php include 'header.php';?>
-    <a href="logout.php">LOGOUT</a>
+    <form action="login.php" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" name="email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password"><br><br>
+        <input class="btn btn-dark" type="submit" value="LOGIN"><br><br>
+        <?php echo $msg . "<br>"; ?>
+    </form>
 </body>
 </html>
