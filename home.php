@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+<?php include 'check_session.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,6 @@
     <title>PHP Login Example</title>
 </head>
 <body>
-    <?php include 'check_session.php';?>
     <h1>PHP Login Example</h1>
     <?php include 'header.php';?>
     <a href="logout.php">LOGOUT</a>
