@@ -3,8 +3,6 @@
         // Database connection
         include 'database.php';
 
-        $msg = '';
-
         // check if the POST email is in the database
         if(!empty($_POST['email']) && !empty($_POST['password'])){
             // Gets the user by the email got via POST request
@@ -19,7 +17,8 @@
                 $_SESSION['name'] = $user["name"];
                 header('Location: home.php');
             }else {
-                header('Location: index.php');
+                $msg = "Wrong password or email.";
+                header("Location: index.php?msg=$msg");
             }
         }
     ?>

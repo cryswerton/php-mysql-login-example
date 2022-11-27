@@ -15,7 +15,7 @@
         <label for="password">Password:</label><br>
         <input type="password" name="password"><br><br>
         <input class="btn btn-dark" type="submit" value="LOGIN"><br><br>
-        <?php echo $msg . "<br>"; ?>
+        <small style="color: red;"><?php echo $_GET["msg"]; ?></small>        
     </form>
 </body>
 </html>
