@@ -1,8 +1,15 @@
 <?php
     include "env.php";
 
+    $db_host = $ENV["DB_HOST"];
+
+    // Is there any port set?
+    if(strlen($ENV["DB_PORT"]) > 0){
+        $db_host = $db_host . ":" . $ENV["DB_PORT"];
+    }
+
     // MySQLi
-    $conn = new mysqli($ENV["DB_HOST"] . ":" . $ENV["DB_PORT"], $ENV["DB_USERNAME"], $ENV["DB_PASSWORD"], $ENV["DB_DATABASE"]);
+    $conn = new mysqli($db_host, $ENV["DB_USERNAME"], $ENV["DB_PASSWORD"], $ENV["DB_DATABASE"]);
 
     // Check connection
     if ($conn -> connect_errno) {
